@@ -1,0 +1,147 @@
+﻿@{
+    ViewBag.Title = "Início";
+}
+
+<style>
+    .hero {
+        background: linear-gradient(135deg, #1a6b8a, #2ecc71);
+        border-radius: 20px;
+        color: white;
+        padding: 60px 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .hero a {
+            background: white;
+            color: #1a6b8a;
+            font-weight: 700;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+            display: inline-block;
+            margin: 6px;
+        }
+
+            .hero a:hover {
+                transform: scale(1.05);
+            }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a6b8a;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 15px;
+        background: #2ecc71;
+        color: white;
+        padding: 8px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .alerta-box {
+        background: #fff8e1;
+        border-left: 5px solid #f4a020;
+        border-radius: 10px;
+        padding: 20px 25px;
+        margin-bottom: 30px;
+    }
+
+        .alerta-box h4 {
+            color: #e67e00;
+            margin-bottom: 8px;
+        }
+
+        .alerta-box p {
+            color: #555;
+        }
+</style>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>🧠 Laços de Memória, Preserve a Vida</h1>
+    <p>Informação e atividades para ajudar idosos e familiares no cuidado com doenças cognitivas como Alzheimer e demência.</p>
+    <a href="/Home/Artigos">Ver Artigos</a>
+    <a href="/Home/Jogos" style="background:#2ecc71;color:white;">🎮 Jogar Agora</a>
+</div>
+
+<!-- ALERTA -->
+<div class="alerta-box">
+    <h4>⚠️ Você sabia?</h4>
+    <p>Mais de 1,7 milhão de brasileiros vivem com Alzheimer. O diagnóstico precoce e a estimulação cognitiva podem retardar significativamente a progressão da doença.</p>
+</div>
+
+<!-- CARDS -->
+<div class="cards-grid">
+    <div class="card">
+        <div class="card-icon">📰</div>
+        <h3>Artigos Informativos</h3>
+        <p>Conteúdos sobre Alzheimer, demência, Parkinson e outras doenças cognitivas. Escritos de forma acessível para familiares e cuidadores.</p>
+        <a href="/Home/Artigos">Ler Artigos</a>
+    </div>
+    <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Jogos Cognitivos</h3>
+        <p>Atividades e jogos lúdicos desenvolvidos para estimular memória, atenção e raciocínio em idosos de forma divertida.</p>
+        <a href="/Home/Jogos">Jogar</a>
+    </div>
+    <div class="card">
+        <div class="card-icon">👥</div>
+        <h3>Rede de Apoio</h3>
+        <p>Cadastre idosos e cuidadores, acompanhe o progresso e mantenha um histórico de atividades realizadas.</p>
+        <a href="/Pessoa">Cadastros</a>
+    </div>
+</div>
